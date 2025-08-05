@@ -2,7 +2,7 @@ if status is-interactive
     starship init fish | source
 
     # Set abbreviations 
-    abbr -a -g sed gsed
+    abbr -a -g sed gsed # Specific to mac
     abbr -a -g ... 'cd ../../'
     abbr -a -g .... 'cd ../../../'
     abbr -a -g vim hx
@@ -28,6 +28,7 @@ if status is-interactive
     fish_add_path $BUN_INSTALL/bin
     fish_add_path $HOME/.local/bin
     fish_add_path $(go env GOPATH)/bin
+    fish_add_path ~/.cargo/bin
     # fish_add_path /Library/Frameworks/GStreamer.framework/Versions/1.0/bin
     # fish_add_path /opt/homebrew/opt/libpq/bin
 end
