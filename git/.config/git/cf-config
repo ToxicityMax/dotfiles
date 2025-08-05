@@ -1,0 +1,5 @@
+[user]
+        name = kpsingh
+        email = kpsingh@cloudflare.com
+[init]
+        defaultBranch = main

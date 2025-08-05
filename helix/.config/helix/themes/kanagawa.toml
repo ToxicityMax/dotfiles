@@ -1,0 +1,108 @@
+# ~/.config/helix/themes/dragon.toml
+inherits = "default"
+
+# UI Elements
+"ui.background" = { bg = "#0d0c0c" }                            # dragonBlack3
+"ui.text" = { fg = "#c5c9c5" }                                  # dragonWhite
+"ui.text.focus" = { fg = "#c5c9c5", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "#a6a69c" }                         # oldWhite
+"ui.cursor" = { fg = "#0d0c0c", bg = "#c5c9c5" }                # inverted
+"ui.cursor.insert" = { modifiers = ["underlined"] }
+"ui.cursor.select" = { bg = "#2d4f67" }                         # waveBlue1 (from wave theme)
+"ui.cursor.match" = { modifiers = ["underlined"] }
+"ui.selection" = { bg = "#2d4f67" }                             # waveBlue1
+"ui.gutter" = { bg = "#0a0a0a" }                                # dragonBlack4
+"ui.linenr" = { fg = "#4c4c4c" }                                # dragonBlack6
+"ui.linenr.selected" = { fg = "#c5c9c5", modifiers = ["bold"] } # dragonWhite
+"ui.statusline" = { fg = "#c5c9c5", bg = "#0a0a0a" }            # dragonWhite, dragonBlack4
+"ui.statusline.inactive" = { fg = "#4c4c4c", bg = "#0a0a0a" }   # dragonBlack6, dragonBlack4
+"ui.statusline.insert" = { fg = "#c5c9c5", bg = "#0a0a0a" }
+"ui.statusline.select" = { fg = "#c5c9c5", bg = "#2d4f67" }
+"ui.virtual.whitespace" = { fg = "#3b3b3b" }                    # dragonBlack6
+"ui.virtual.indent-guide" = { fg = "#1a1a1a" }                  # dragonBlack2
+"ui.menu" = { fg = "#c5c9c5", bg = "#223249" }                  # dragonWhite, waveBlue1
+"ui.menu.selected" = { fg = "#c5c9c5", bg = "#1a1a1a" }         # dragonWhite, dragonBlack2
+"ui.window" = { fg = "#3b3b3b" }                                # dragonBlack6
+"ui.popup" = { bg = "#050505" }                                 # dragonBlack0
+"ui.help" = { fg = "#c5c9c5", bg = "#050505" }                  # dragonWhite, dragonBlack0
+
+# Syntax Highlighting
+"attribute" = { fg = "#8ba4b0" }                       # dragonBlue2
+"comment" = { fg = "#6f6f6f", modifiers = ["italic"] } # dragonAsh
+"constant" = { fg = "#e46876" }                        # dragonOrange
+"constant.builtin" = { fg = "#e46876" }                # dragonOrange
+"constant.builtin.boolean" = { fg = "#e46876" }        # dragonOrange
+"constructor" = { fg = "#8ba4b0" }                     # dragonBlue2
+"function" = { fg = "#8ba4b0" }                        # dragonBlue2
+"function.builtin" = { fg = "#8ba4b0" }                # dragonBlue2
+"function.method" = { fg = "#8ba4b0" }                 # dragonBlue2
+"keyword" = { fg = "#957fb8" }                         # dragonViolet
+"operator" = { fg = "#c0a36e" }                        # dragonYellow
+"string" = { fg = "#76946a" }                          # dragonGreen2
+"type" = { fg = "#7fb4ca" }                            # dragonAqua
+"variable" = { fg = "#c5c9c5" }                        # dragonWhite
+"variable.builtin" = { fg = "#c34043" }                # dragonRed
+"variable.parameter" = { fg = "#a6a69c" }              # dragonGray
+"punctuation" = { fg = "#7aa89f" }                     # dragonTeal2
+"punctuation.delimiter" = { fg = "#7aa89f" }           # dragonTeal2
+"punctuation.bracket" = { fg = "#7aa89f" }             # dragonTeal2
+
+# Markup
+"markup.heading" = { fg = "#c34043", modifiers = ["bold"] }        # dragonRed
+"markup.list" = { fg = "#e46876" }                                 # dragonOrange
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link" = { fg = "#8ba4b0" }                                 # dragonBlue2
+"markup.link.url" = { fg = "#8ba4b0", modifiers = ["underlined"] }
+"markup.raw" = { fg = "#76946a" }                                  # dragonGreen2
+
+# Diagnostics
+"error" = { fg = "#c34043" }                                         # dragonRed
+"warning" = { fg = "#c0a36e" }                                       # dragonYellow
+"info" = { fg = "#7aa89f" }                                          # dragonTeal2
+"hint" = { fg = "#7fb4ca" }                                          # dragonAqua
+"diagnostic" = { underline = { color = "#c34043", style = "curl" } } # dragonRed
+
+# Diff
+"diff.plus" = { fg = "#76946a" }  # dragonGreen2
+"diff.minus" = { fg = "#c34043" } # dragonRed
+"diff.delta" = { fg = "#8ba4b0" } # dragonBlue2
+
+# Palette
+[palette]
+dragonBlack0 = "#050505"
+dragonBlack1 = "#0a0a0a"
+dragonBlack2 = "#1a1a1a"
+dragonBlack3 = "#0d0c0c"
+dragonBlack4 = "#0a0a0a"
+dragonBlack5 = "#1a1a1a"
+dragonBlack6 = "#3b3b3b"
+dragonWhite = "#c5c9c5"
+oldWhite = "#a6a69c"
+dragonAsh = "#6f6f6f"
+dragonGray = "#a6a69c"
+dragonGray2 = "#7e7e7e"
+dragonGray3 = "#9c9c9c"
+dragonBlue1 = "#223249"
+dragonBlue2 = "#8ba4b0"
+dragonBlue3 = "#658594"
+dragonGreen = "#6f894e"
+dragonGreen2 = "#76946a"
+dragonGreen3 = "#6f894e"
+dragonYellow = "#c0a36e"
+dragonYellow2 = "#dca561"
+dragonYellow3 = "#dca561"
+dragonOrange = "#e46876"
+dragonOrange2 = "#ffa066"
+dragonRed = "#c34043"
+dragonRed2 = "#e82424"
+dragonRed3 = "#e82424"
+dragonRed4 = "#d7474b"
+dragonAqua = "#7fb4ca"
+dragonAqua2 = "#658594"
+dragonTeal1 = "#6a9589"
+dragonTeal2 = "#7aa89f"
+dragonTeal3 = "#7aa89f"
+dragonViolet = "#957fb8"
+dragonPink = "#938aa9"
+dragonCyan = "#658594"

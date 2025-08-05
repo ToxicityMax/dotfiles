@@ -1,0 +1,79 @@
+# ~/.config/helix/themes/cyberneon.toml
+inherits = "default"
+
+# UI Elements - Dark Matrix-style background with neon highlights
+"ui.background" = { bg = "#0a0a12" }
+"ui.text" = { fg = "#e0e0e0" }
+"ui.text.focus" = { fg = "#00f0ff", modifiers = ["bold"] }      # Cyan highlight
+"ui.text.inactive" = { fg = "#606080" }
+"ui.cursor" = { fg = "#0a0a12", bg = "#00f0ff" }                # Cyan cursor
+"ui.cursor.insert" = { bg = "#ff00ff" }                         # Magenta in insert mode
+"ui.cursor.select" = { bg = "#ff5555" }                         # Red in select mode
+"ui.selection" = { bg = "#203050" }
+"ui.gutter" = { bg = "#05050a" }
+"ui.linenr" = { fg = "#505070" }
+"ui.linenr.selected" = { fg = "#00f0ff", modifiers = ["bold"] }
+"ui.statusline" = { fg = "#00f0ff", bg = "#05050a" }
+"ui.statusline.insert" = { fg = "#ff00ff", bg = "#05050a" }
+"ui.statusline.select" = { fg = "#ff5555", bg = "#05050a" }
+"ui.virtual.whitespace" = { fg = "#303045" }
+"ui.virtual.indent-guide" = { fg = "#252535" }
+"ui.menu" = { fg = "#ffffff", bg = "#151530" }
+"ui.menu.selected" = { fg = "#0a0a12", bg = "#00f0ff" }
+"ui.window" = { fg = "#00f0ff" }                                # Cyan borders
+"ui.popup" = { bg = "#0f0f1a" }
+"ui.help" = { fg = "#e0e0e0", bg = "#0f0f1a" }
+
+# Syntax Highlighting - Vibrant neon colors
+"attribute" = { fg = "#ff00ff" }                       # Magenta
+"comment" = { fg = "#606080", modifiers = ["italic"] }
+"constant" = { fg = "#ff5555" }                        # Red
+"constant.builtin" = { fg = "#ff8888" }                # Light red
+"constant.numeric" = { fg = "#ff9900" }                # Orange
+"constructor" = { fg = "#00f0ff" }                     # Cyan
+"function" = { fg = "#00aaff" }                        # Blue
+"function.method" = { fg = "#00aaff" }
+"keyword" = { fg = "#ff00ff", modifiers = ["bold"] }   # Bold magenta
+"operator" = { fg = "#00f0ff" }                        # Cyan
+"string" = { fg = "#00ff88" }                          # Green
+"type" = { fg = "#00aaff" }                            # Blue
+"variable" = { fg = "#e0e0e0" }
+"variable.builtin" = { fg = "#ff5555" }                # Red
+"variable.parameter" = { fg = "#ff9900" }              # Orange
+"punctuation" = { fg = "#00f0ff" }                     # Cyan
+"punctuation.bracket" = { fg = "#ff00ff" }             # Magenta
+
+# Markup - Cyberpunk styling
+"markup.heading" = { fg = "#00f0ff", modifiers = ["bold"] }
+"markup.list" = { fg = "#ff00ff" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link" = { fg = "#00aaff" }
+"markup.link.url" = { fg = "#00aaff", modifiers = ["underlined"] }
+"markup.raw" = { fg = "#00ff88" }
+
+# Diagnostics - Glowing alerts
+"error" = { fg = "#ff0000", modifiers = ["bold"] }                   # Bright red
+"warning" = { fg = "#ff9900" }                                       # Orange
+"info" = { fg = "#00aaff" }                                          # Blue
+"hint" = { fg = "#00ff88" }                                          # Green
+"diagnostic" = { underline = { color = "#ff00ff", style = "curl" } }
+
+# Diff - Neon highlights
+"diff.plus" = { fg = "#00ff88" }  # Green
+"diff.minus" = { fg = "#ff5555" } # Red
+"diff.delta" = { fg = "#00aaff" } # Blue
+
+# Palette - Cyberpunk color scheme
+[palette]
+matrix-bg = "#0a0a12"
+matrix-dark = "#05050a"
+matrix-light = "#151530"
+neon-cyan = "#00f0ff"
+neon-magenta = "#ff00ff"
+neon-red = "#ff5555"
+neon-orange = "#ff9900"
+neon-green = "#00ff88"
+neon-blue = "#00aaff"
+terminal-white = "#e0e0e0"
+terminal-gray = "#606080"

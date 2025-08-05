@@ -1,0 +1,147 @@
+# High Contrast Dark Theme
+# Author: Your Name
+# Inspired by Rosé Pine
+
+"ui.background" = { bg = "base" }
+"ui.background.separator" = { bg = "base" }
+
+"ui.cursor" = { fg = "text", bg = "highlight_high" }
+"ui.cursor.match" = { fg = "text", bg = "highlight_med" }
+"ui.cursor.primary" = { fg = "text", bg = "muted" }
+
+"ui.linenr" = { fg = "muted" }
+"ui.linenr.selected" = { fg = "text" }
+
+"ui.bufferline" = { fg = "muted", bg = "base" }
+"ui.bufferline.active" = { fg = "text", bg = "overlay" }
+"ui.statusline" = { fg = "subtle", bg = "surface" }
+"ui.statusline.inactive" = { fg = "muted", bg = "surface" }
+"ui.statusline.normal" = { fg = "accent_primary", bg = "accent_primary_10" }
+"ui.statusline.insert" = { fg = "accent_secondary", bg = "accent_secondary_10" }
+"ui.statusline.select" = { fg = "accent_tertiary", bg = "accent_tertiary_10" }
+
+"ui.popup" = { bg = "surface" }
+"ui.popup.info" = { bg = "surface" }
+
+"ui.window" = { fg = "overlay", bg = "base" }
+"ui.help" = { fg = "subtle", bg = "overlay" }
+
+"ui.text" = { fg = "text" }
+"ui.text.focus" = { bg = "ui_text_focus", fg = "#000000" }
+"ui.text.info" = { fg = "subtle" }
+"ui.text.directory" = { fg = "accent_tertiary" }
+
+"ui.virtual.jump-label" = { fg = "accent_warning", modifiers = ["bold"] }
+"ui.virtual.ruler" = { bg = "overlay" }
+"ui.virtual.whitespace" = { fg = "highlight_high" }
+"ui.virtual.indent-guide" = { fg = "muted" }
+"ui.virtual.inlay-hint" = { fg = "subtle" }
+
+"ui.menu" = { fg = "subtle", bg = "surface" }
+"ui.menu.selected" = { fg = "text" }
+"ui.menu.scroll" = { fg = "muted", bg = "highlight_med" }
+
+"ui.selection" = { bg = "#4A4A4A" }
+"ui.selection.primary" = { bg = "highlight_med" }
+
+"ui.cursorline.primary" = { bg = "highlight_low" }
+"ui.cursorline.secondary" = { bg = "surface" }
+
+"warning" = "accent_warning"
+"error" = "accent_error"
+"info" = "accent_info"
+"hint" = "accent_hint"
+"debug" = "accent_primary"
+
+"diagnostic" = { underline = { color = "subtle", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "accent_hint", style = "curl" } }
+"diagnostic.info" = { underline = { color = "accent_info", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "accent_warning", style = "curl" } }
+"diagnostic.error" = { underline = { color = "accent_error", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+"special" = "accent_primary"
+
+"attribute" = "accent_tertiary"
+
+"type" = "accent_secondary"
+"constructor" = "accent_secondary"
+
+"constant" = "accent_secondary"
+"constant.builtin" = "accent_error"
+"constant.builtin.boolean" = "accent_primary"
+"constant.character" = "accent_warning"
+"constant.character.escape" = "accent_info"
+"constant.numeric" = "accent_warning"
+
+"string" = "accent_warning"
+"comment" = { fg = "muted", modifiers = ["italic"] }
+
+"variable" = "text"
+"variable.builtin" = "accent_error"
+"variable.parameter" = "accent_tertiary"
+"variable.other.member" = "accent_secondary"
+
+"label" = "accent_secondary"
+
+"punctuation" = "subtle"
+"keyword" = "accent_info"
+"keyword.operator" = "subtle"
+"operator" = "subtle"
+
+"function" = "accent_primary"
+"function.builtin" = "accent_error"
+
+"tag" = "accent_secondary"
+
+"namespace" = "text"
+
+"markup.heading.marker" = "muted"
+"markup.heading" = { fg = "accent_tertiary", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "accent_tertiary", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "accent_secondary", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "accent_primary", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "accent_warning", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "accent_info", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "accent_secondary", modifiers = ["bold"] }
+"markup.list" = "muted"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = "accent_tertiary"
+"markup.link.url" = { fg = "accent_tertiary", underline = { color = "accent_tertiary", style = "line" } }
+"markup.link.label" = "subtle"
+"markup.link.text" = "text"
+"markup.quote" = "subtle"
+"markup.raw" = "subtle"
+
+"diff" = "overlay"
+"diff.plus" = "accent_secondary"
+"diff.minus" = "accent_error"
+"diff.delta" = "highlight_high"
+
+[palette]
+base = "#0A0A0A"
+surface = "#121212"
+overlay = "#1A1A1A"
+ui_text_focus = "#d3007f"
+muted = "#555555"
+subtle = "#888888"
+text = "#cccccc"
+accent_primary = "#FF6F91"
+accent_primary_10 = "#331F2A"
+accent_secondary = "#6F91FF"
+accent_secondary_10 = "#1F2A33"
+accent_tertiary = "#91FF6F"
+accent_tertiary_10 = "#2A331F"
+accent_warning = "#FFC177"
+accent_warning_10 = "#332A1F"
+accent_error = "#FF6F6F"
+accent_error_10 = "#331F1F"
+accent_info = "#6FC1FF"
+accent_info_10 = "#1F2F33"
+accent_hint = "#C16FFF"
+accent_hint_10 = "#2F1F33"
+highlight_low = "#1E1E1E"
+highlight_med = "#00328a"
+highlight_high = "#4A4A4A"

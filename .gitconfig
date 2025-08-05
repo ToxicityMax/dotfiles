@@ -1,0 +1,27 @@
+[user]
+        name = ToxicityMax
+        email = ksingh2001.dev@gmail.com
+        signingkey = 60680EDD87BE95E4
+[alias]
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        branches = branch -a
+        root = rev-parse --show-toplevel
+        hub = !hub
+[core]
+        editor = hx
+[includeIf "gitdir:~/dyte/"]
+        path = ~/.config/git/dyte-config
+        template = ~/.config/git/dyte-template
+[includeIf "gitdir:~/cf/"]
+        path = ~/.config/git/cf-config
+        template = ~/.config/git/cf-template
+[rerere]
+        enabled = true
+[column]
+        ui = auto
+[commit]
+        verbose = true
+        cleanup = strip
+        gpgSign = true
+[url "git@github.com:"]
+        insteadOf = https://github.com/

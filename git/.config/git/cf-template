@@ -1,0 +1,26 @@
+##################################################
+# Add, Drop, Fix, Refactor, Bump; 
+##################################################
+# Title:
+
+
+########################################################################
+# Why is this change happening? Describe the purpose, such as a goal, or use case, or user story, etc.
+########################################################################
+# Why:
+
+
+########################################################################
+# How is this change happening? Describe any relevant algorithms, protocols, implementation spec, etc.
+########################################################################
+# How:
+
+########################################################################
+# Add any tags you want, such as search text, hashtags, keywords, codes.
+########################################################################
+# Tags:
+
+# GIT TRAILERS -- THESE MUST BE LAST IN THE COMMIT MESSAGE ###
+Signed-off-by: Kunwar <kpsingh@cloudflare.com>
+
+# https://github.com/joelparkerhenderson/git-commit-message

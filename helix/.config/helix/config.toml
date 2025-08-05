@@ -1,0 +1,41 @@
+theme = "kanagawa"
+# theme = "kps"
+# theme = "kanagawa-wave"
+
+[editor]
+line-number = "relative"
+mouse = true
+auto-info = true
+auto-format = true
+rainbow-brackets = true
+end-of-line-diagnostics = "hint" # Minimum severity to show a diagnostic after the end of a line:
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name", "read-only-indicator", "file-modification-indicator"]
+right = [
+  "workspace-diagnostics",
+  "version-control",
+  "spacer",
+  "diagnostics",
+  "selections",
+  "position",
+  "file-encoding",
+  "file-type",
+]
+
+
+[keys.normal.space]
+x = ":toggle whitespace.render all none" # Shows whitespaces
+[keys.normal]
+X = ["extend_line_up", "extend_to_line_bounds"]
+[keys.normal.G]
+b = ":sh git log -n 5 --format='format:%%h (%%an: %%ar) %%s' --no-patch -L%{cursor_line},+1:%{buffer_name}"
