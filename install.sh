@@ -25,6 +25,27 @@ function stow_init()
    fi
 }
 
+function stow_del()
+{
+   dirs=$(ls -d */)
+   for dir in $dirs
+   do
+     echo "Check the plan..."
+     stow -nD $dir
+   done
+ 
+   read -p "Are you sure? y/n " -n 1 -r
+   echo
+   if [[ $REPLY =~ ^[Yy]$ ]]
+   then
+     for dir in $dirs
+     do
+       stow -Dv $dir
+     done
+   fi
+}
+
+
 # Pacman/Homebrew essential packages
 # kitty
 # fish
